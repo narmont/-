@@ -1,0 +1,97 @@
+unit Rasshivka;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Data.DB, Data.Win.ADODB, iniFiles;
+
+type
+  TForm2 = class(TForm)
+    Label1: TLabel;
+    Edit1: TEdit;
+    Memo1: TMemo;
+    Label2: TLabel;
+    ADOConnection2: TADOConnection;
+    DataSource2: TDataSource;
+    ADOQuery2: TADOQuery;
+    procedure Edit1KeyPress(Sender: TObject; var Key: Char);
+    procedure FormCreate(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+  ini : TIniFile;
+
+implementation
+
+{$R *.dfm}
+
+uses Registration;
+
+
+function GetUserFromWindows: string;
+var
+  Name : string;
+  NameLen : Dword;
+begin
+  NameLen := 255;
+  SetLength(Name, NameLen);
+  if GetUserName(PChar(Name), NameLen) then
+    Result := Copy(Name,1,NameLen - 1)
+  else
+    Result := 'Не вышло';
+end;
+
+
+procedure TForm2.Edit1KeyPress(Sender: TObject; var Key: Char);
+var
+  today : TDateTime;
+begin
+        today := Now;
+       if Key = #13 then
+       begin
+
+       ADOQuery2.Close;
+
+       ADOQuery2.SQL.Add('INSERT INTO dbo.Rasshivka ([Регистрация расшивки], [Имя пользователя])');
+       ADOQuery2.SQL.Add('VALUES (' + quotedstr(Edit1.Text) + ',' + quotedstr(GetUserFromWindows) + ')' );
+
+       ADOQuery2.ExecSQL;
+       ADOQuery2.SQL.Clear;
+       ADOQuery2.SQL.Add('SELECT * FROM Rasshivka');
+       ADOQuery2.Open;
+
+       Memo1.Lines.Add(Edit1.Text + '  ' + DateToStr(today) + ' ' + TimeToStr(today));
+
+       key:=#0;
+
+       Edit1.Clear;
+       Label2.Caption := ' Регистратор - '+ GetUserFromWindows + ' группировок: ' + inttostr(Memo1.Lines.Count);
+       end;
+end;
+
+procedure TForm2.FormCreate(Sender: TObject);
+begin
+      //  ADOQuery1.SQL.Clear;
+         ini:=Tinifile.Create(extractfilepath(paramstr(0))+'setting.ini');
+      //  Edit1.Text := ini.ReadString('Connection','ConnStr','');
+
+        ADOConnection2.Connected:=False;
+        ADOConnection2.LoginPrompt := False;
+        ADOConnection2.DefaultDatabase := 'TeestREG.mdf';
+        ADOConnection2.ConnectionString:= ini.ReadString('Connection TeestREG','ConnStr2','');
+        ADOConnection2.Connected:=True;
+
+      //  ADOQuery1.ConnectionString:= ini.ReadString('Connection','Properties','default value');
+     // ADOQuery1.ConnectionString:= ini.ReadString('Connection','Provider','default value');
+        ADOQuery2.Active :=True;
+        Ini.Free;
+end;
+
+end.

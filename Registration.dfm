@@ -1,0 +1,471 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = #1056#1072#1089#1096#1080#1074#1082#1072' '#1080' '#1088#1077#1075#1080#1089#1090#1088#1072#1094#1080#1103'.'
+  ClientHeight = 755
+  ClientWidth = 1130
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  Position = poDesigned
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 15
+    Top = 13
+    Width = 228
+    Height = 42
+    Caption = #1058#1080#1087' '#1076#1086#1089#1090#1072#1074#1082#1080
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -37
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+  end
+  object Label2: TLabel
+    Left = 15
+    Top = 109
+    Width = 242
+    Height = 57
+    AutoSize = False
+    Caption = #1057#1086#1087#1088#1086#1074#1086#1076#1080#1090#1077#1083#1100#1085#1099#1081' '#1082#1086#1088#1086#1073
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -23
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    WordWrap = True
+  end
+  object Label3: TLabel
+    Left = 11
+    Top = 194
+    Width = 258
+    Height = 44
+    AutoSize = False
+    Caption = #1064#1090#1088#1080#1093'-'#1082#1086#1076' DHL'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -35
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    WordWrap = True
+  end
+  object Label4: TLabel
+    Left = 15
+    Top = 261
+    Width = 242
+    Height = 57
+    AutoSize = False
+    Caption = #1057#1086#1087#1088#1086#1074#1086#1076#1080#1090#1077#1083#1100#1085#1099#1081' '#1076#1086#1082#1091#1084#1077#1085#1090
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -23
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    WordWrap = True
+  end
+  object Label5: TLabel
+    Left = 11
+    Top = 346
+    Width = 258
+    Height = 44
+    AutoSize = False
+    Caption = #8470' '#1075#1088#1091#1087#1087#1080#1088#1086#1074#1082#1080
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -35
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    WordWrap = True
+  end
+  object Label6: TLabel
+    Left = 11
+    Top = 426
+    Width = 258
+    Height = 44
+    AutoSize = False
+    Caption = #8470' '#1076#1086#1082#1091#1084#1077#1085#1090#1072
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -35
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Style = []
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    WordWrap = True
+  end
+  object Edit1: TEdit
+    Left = 289
+    Top = 125
+    Width = 241
+    Height = 27
+    CharCase = ecUpperCase
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    OEMConvert = True
+    ParentFont = False
+    TabOrder = 0
+    OnKeyPress = Edit1KeyPress
+  end
+  object ComboBox1: TComboBox
+    Left = 289
+    Top = 28
+    Width = 241
+    Height = 27
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 5
+    TabStop = False
+    OnClick = ComboBox1Click
+    Items.Strings = (
+      'DHL '#1082#1086#1088#1086#1073#1072
+      'DHL '#1087#1072#1082#1077#1090#1099
+      #1050#1091#1088#1100#1077#1088#1089#1082#1072#1103' '#1089#1083#1091#1078#1073#1072
+      #1055#1080#1089#1100#1084#1072)
+  end
+  object Edit2: TEdit
+    Left = 289
+    Top = 207
+    Width = 241
+    Height = 27
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    OEMConvert = True
+    ParentFont = False
+    TabOrder = 1
+    Touch.InteractiveGestures = []
+    Touch.ParentTabletOptions = False
+    Touch.TabletOptions = [toPressAndHold]
+    OnKeyPress = Edit2KeyPress
+  end
+  object Edit3: TEdit
+    Left = 289
+    Top = 275
+    Width = 241
+    Height = 27
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    OEMConvert = True
+    ParentFont = False
+    TabOrder = 2
+    OnKeyPress = Edit3KeyPress
+  end
+  object Edit4: TEdit
+    Left = 289
+    Top = 356
+    Width = 241
+    Height = 27
+    CharCase = ecUpperCase
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    OEMConvert = True
+    ParentFont = False
+    TabOrder = 3
+    OnKeyPress = Edit4KeyPress
+  end
+  object Edit5: TEdit
+    Left = 289
+    Top = 436
+    Width = 241
+    Height = 27
+    CharCase = ecUpperCase
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    OEMConvert = True
+    ParentFont = False
+    TabOrder = 4
+    OnKeyPress = Edit5KeyPress
+  end
+  object ComboBox2: TComboBox
+    Left = 289
+    Top = 61
+    Width = 241
+    Height = 27
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 6
+    TabStop = False
+    Visible = False
+    OnClick = ComboBox2Click
+    Items.Strings = (
+      'ESPR Express'
+      'KCE'
+      'MAJOR'
+      'EMS'
+      'Pony Express'
+      #1056#1058#1050
+      'Credit Consulting')
+  end
+  object Button1: TButton
+    Left = 584
+    Top = 379
+    Width = 265
+    Height = 84
+    Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -32
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 7
+    TabStop = False
+    OnClick = Button1Click
+  end
+  object CheckBox1: TCheckBox
+    Left = 584
+    Top = 28
+    Width = 265
+    Height = 37
+    TabStop = False
+    Caption = #1040#1074#1090#1086#1089#1086#1093#1088#1072#1085#1077#1085#1080#1077
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -32
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+    OnClick = CheckBox1Click
+  end
+  object Button2: TButton
+    Left = 584
+    Top = 180
+    Width = 265
+    Height = 87
+    Caption = #1059#1076#1072#1083#1080#1090#1100' '#1079#1072#1087#1080#1089#1100
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -32
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 9
+    TabStop = False
+    OnClick = Button2Click
+  end
+  object CheckBox2: TCheckBox
+    Left = 584
+    Top = 273
+    Width = 257
+    Height = 36
+    TabStop = False
+    Caption = #1053#1077' '#1079#1072#1087#1086#1083#1085#1103#1090#1100
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 10
+    OnClick = CheckBox2Click
+  end
+  object CheckBox3: TCheckBox
+    Left = 584
+    Top = 117
+    Width = 281
+    Height = 36
+    TabStop = False
+    Caption = #1054#1089#1090#1072#1074#1080#1090#1100' '#1064#1090#1088#1080#1093'-'#1082#1086#1076
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 11
+    OnClick = CheckBox3Click
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 502
+    Width = 1114
+    Height = 245
+    TabStop = False
+    Align = alCustom
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    DataSource = DataSource1
+    TabOrder = 12
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    OnDblClick = DBGrid1DblClick
+    OnEnter = DBGrid1Enter
+    OnKeyPress = DBGrid1KeyPress
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'ID'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1044#1072#1090#1072' '#1088#1077#1075#1080#1089#1090#1088#1072#1094#1080#1080
+        ReadOnly = True
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1064#1050' DHL'
+        Width = 134
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1064#1050' '#1056#1077#1077#1089#1090#1088#1072
+        Width = 134
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1064#1050' '#1043#1088#1091#1087#1087#1080#1088#1086#1074#1082#1080
+        Width = 134
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1064#1050' '#1044#1086#1082#1091#1084#1077#1085#1090#1072
+        Width = 134
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1058#1080#1087' '#1076#1086#1089#1090#1072#1074#1082#1080
+        ReadOnly = True
+        Width = 140
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'ID '#1076#1086#1089#1090#1072#1074#1082#1080
+        ReadOnly = True
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1064#1050' '#1057#1074#1086#1076#1085#1086#1075#1086
+        Width = 140
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1057#1083#1091#1078#1073#1072
+        ReadOnly = True
+        Width = 105
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1048#1084#1103' '#1087#1086#1083#1100#1079#1086#1074#1072#1090#1077#1083#1103
+        ReadOnly = True
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1057#1090#1072#1090#1091#1089
+        ReadOnly = True
+        Visible = True
+      end>
+  end
+  object Button3: TButton
+    Left = 1000
+    Top = 376
+    Width = 75
+    Height = 25
+    Caption = 'Button3'
+    TabOrder = 13
+    OnClick = Button3Click
+  end
+  object ADOConnection1: TADOConnection
+    LoginPrompt = False
+    Mode = cmShareDenyRead
+    Provider = 'SQLOLEDB.1'
+    Left = 888
+    Top = 168
+  end
+  object ADOQuery1: TADOQuery
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    Left = 984
+    Top = 168
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOQuery1
+    Left = 944
+    Top = 240
+  end
+  object MainMenu1: TMainMenu
+    Left = 896
+    Top = 72
+    object N1: TMenuItem
+      Caption = #1052#1077#1085#1102
+      object N3: TMenuItem
+        Caption = #1054#1090#1095#1105#1090
+        OnClick = N3Click
+      end
+      object N2: TMenuItem
+        Caption = #1056#1077#1075#1080#1089#1090#1088#1072#1094#1080#1103' '#1088#1072#1089#1096#1080#1074#1082#1080
+        OnClick = N2Click
+      end
+    end
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 912
+    Top = 344
+  end
+end
